@@ -194,8 +194,8 @@ public class AbpGraphQLHttpApiHostModule : AbpModule
 
         app.UseHttpsRedirection();
         app.UseCorrelationId();
-        app.MapAbpStaticAssets();
         app.UseRouting();
+        app.MapAbpStaticAssets();
         app.UseCors();
         app.UseAuthentication();
         if (MultiTenancyConsts.IsEnabled)

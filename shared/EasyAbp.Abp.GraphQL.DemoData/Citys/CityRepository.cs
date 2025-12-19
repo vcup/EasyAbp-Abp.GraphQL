@@ -16,6 +16,8 @@ namespace EasyAbp.Abp.GraphQL.Citys;
 public class CityRepository : IRepository<CityDto>, ITransientDependency
 {
     public bool? IsChangeTrackingEnabled { get; } = null;
+    public string EntityName { get; set; } = null;
+    public string ProviderName { get; } = "Demo";
 
     private List<CityDto> DataList { get; }
 
