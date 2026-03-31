@@ -7,14 +7,13 @@ namespace EasyAbp.Abp.GraphQL.Citys.Dtos;
 public class CityDto : ExtensibleEntityDto, IEntity
 {
     public string CountryName { get; set; }
-    
+
     public string Name { get; set; }
-    
+
     public Dictionary<int, string> AreaNumberNameMapping { get; set; }
 
     public CityDto()
     {
-            
     }
 
     public CityDto(CityKey id)
@@ -26,5 +25,10 @@ public class CityDto : ExtensibleEntityDto, IEntity
     public object[] GetKeys()
     {
         return new object[] { CountryName, Name };
+    }
+
+    public string GetObjectKey()
+    {
+        return GetKeys().JoinAsString(", ");
     }
 }

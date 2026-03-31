@@ -13,7 +13,7 @@ using EasyAbp.Abp.GraphQL.Provider.GraphQLDotnet;
 using EasyAbp.Abp.GraphQL.Web;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using StackExchange.Redis;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc.AntiForgery;
 using Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy;
